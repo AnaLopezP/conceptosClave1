@@ -19,5 +19,7 @@ if __name__ == "__main__":
     punto2 = ejercicio.Punto._str_(cordX2,cordY2)
     print(punto2)
     print("El vector de la diagonal del rectángulo es:")
-    vectorBase = ejercicio.Punto.vector(cordX1, cordY1, cordX2, cordY2)
-    print(vectorBase)
+    vectorDiagonal = ejercicio.Punto.vector(cordX1, cordY1, cordX2, cordY2)
+    print(vectorDiagonal)
+
+    

@@ -77,6 +77,13 @@ class cuadrado(Punto):
     def set_punto2(self,punto2):
         self.punto2 = punto2
 
-    def base(self):
-        print("Primer punto de la base")
+    def base(self, cordX, cordY):
+        cordX1 = Punto.set_cordX(cordX)
+        cordY1 = Punto.set_cordY(cordY)
+        #punto1 = Punto._str_(cordX1, cordY1)
+        cordX2 = Punto.set_cordX(cordX)
+        cordY2 = cordY1
+        vectorBase = Punto.vector(cordX1, cordY1, cordX2, cordY2)
+        print(vectorBase)
+        
         
