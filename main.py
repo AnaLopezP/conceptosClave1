@@ -1,7 +1,7 @@
 import ejercicio
 
 if __name__ == "__main__":
-    print("Vamos a crear un rectángulo")
+    print("Vamos a crear un rectángulo, a partir de su diagonal")
     print("Coordenada x del primer punto")
     cordX1 = int(input())
     ejercicio.Punto.set_cordX(cordX1)
@@ -17,5 +17,7 @@ if __name__ == "__main__":
     cordY2= int(input())
     ejercicio.Punto.set_cordY(cordY2)
     punto2 = ejercicio.Punto._str_(cordX2,cordY2)
-    print(punto2
-    )
+    print(punto2)
+    print("El vector de la diagonal del rectángulo es:")
+    vectorBase = ejercicio.Punto.vector(cordX1, cordY1, cordX2, cordY2)
+    print(vectorBase)

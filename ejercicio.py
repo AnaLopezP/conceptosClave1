@@ -57,7 +57,7 @@ class Punto:
     def vector(self, cordX1, cordY1, cordX2, cordY2):
         cordX = int(cordX2) - int(cordX1)
         cordY = int(cordY2) - int(cordY1)
-        vector = str(cordX, cordY)
+        vector = Punto._str_(cordX, cordY)
         return vector
         
 
