@@ -76,5 +76,7 @@ class cuadrado(Punto):
 
     def set_punto2(self,punto2):
         self.punto2 = punto2
-    
 
+    def base(self):
+        print("Primer punto de la base")
+        
