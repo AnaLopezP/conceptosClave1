@@ -1,6 +1,5 @@
 from curses.ascii import isdigit
 
-
 class Punto:
     def __init__(self, cordX, cordY):
         self.cordX = cordX 
@@ -16,6 +15,18 @@ class Punto:
         else:
             pass
 
+    def get_cordX(self):
+        return self.cordX
+    
+    def get_cordY(self):
+        return self.cordY
+
+    def set_cordX(self, cordX):
+        self.cordX = cordX
+
+    def set_cordY(self, cordY):
+        self.cordY = cordY
+    
     def _str_(self):
         cadena = "(" + str(self.cordX) + "," + str(self.cordY) + ")"
         return cadena
@@ -43,4 +54,5 @@ class Punto:
             else:
                 print("Tu punto es el origen de coordenadas")
 
-            
+    def vector(self, cadena):
+        punto1 = 
