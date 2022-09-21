@@ -16,3 +16,7 @@ class Punto:
         else:
             pass
 
+    def _str_(self):
+        cadena = "(" + str(self.cordX) + "," + str(self.cordY) + ")"
+        return cadena
+
